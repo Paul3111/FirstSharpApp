@@ -15,10 +15,14 @@ namespace FirstSharpApp
             int triangleBase = 5, height = 6;
             double triangleArea = 0;
             triangleArea = 0.5 * (triangleBase * height);
-            
+            bool isCSharpFun = true;
+
             Console.WriteLine("Hello there!");
             Console.WriteLine("The value of PI is:" + pi);
             Console.WriteLine("The area of this triangle is: " + triangleArea);
+            Console.WriteLine($"Is C# fun? : {isCSharpFun}");
+            Console.WriteLine("Int to string conversion => " + Convert.ToString(triangleBase));
+
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
 
