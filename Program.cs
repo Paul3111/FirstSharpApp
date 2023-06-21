@@ -21,8 +21,10 @@ namespace FirstSharpApp
             Console.WriteLine("The value of PI is:" + pi);
             Console.WriteLine("The area of this triangle is: " + triangleArea);
             Console.WriteLine($"Is C# fun? : {isCSharpFun}");
-            Console.WriteLine("Int to string conversion => " + Convert.ToString(triangleBase));
-
+            Console.WriteLine("Int to string conversion => triangleArea is: " + Convert.ToString(triangleBase));
+            Console.WriteLine("What is your name: ");
+            string name = Console.ReadLine();
+            Console.WriteLine("Welcome, " + name);
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
 
