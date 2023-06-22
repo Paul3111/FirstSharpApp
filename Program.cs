@@ -25,6 +25,10 @@ namespace FirstSharpApp
             Console.WriteLine("What is your name: ");
             string name = Console.ReadLine();
             Console.WriteLine("Welcome, " + name);
+            int x = 10;
+            int y = 13;
+            Console.WriteLine("The result is: " + x * y / x);
+
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
 
