@@ -22,9 +22,17 @@ namespace FirstSharpApp
             Console.WriteLine("The area of this triangle is: " + triangleArea);
             Console.WriteLine($"Is C# fun? : {isCSharpFun}");
             Console.WriteLine("Int to string conversion => triangleArea is: " + Convert.ToString(triangleBase));
-            Console.WriteLine("What is your name: ");
-            string name = Console.ReadLine();
-            Console.WriteLine("Welcome, " + name);
+            Console.WriteLine("What is your first name: ");
+            string firstName = Console.ReadLine();
+            Console.WriteLine("Welcome, " + firstName);
+            Console.WriteLine("The length of your name is: " + firstName.Length);
+            Console.WriteLine("Your capitalised name is: " + firstName.ToUpper());
+
+            Console.WriteLine("What is your last name: ");
+            string lastName = Console.ReadLine();
+            Console.WriteLine($"Your full name is:{firstName.ToUpper()} {lastName.ToUpper()}");
+            Console.WriteLine($"The second part of your last name starting from letter 'z' is: {lastName.Substring(lastName.IndexOf("z"))}");
+
             int x = 10;
             int y = 13;
             Console.WriteLine("The result is: " + x * y / x);
