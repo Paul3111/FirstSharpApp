@@ -43,10 +43,22 @@ namespace FirstSharpApp
                 Console.WriteLine(cars[i]);
             }
 
+            //Calling another method inside Main multiple times
+            Console.WriteLine("Example of calling another method inside Main multiple times");
+            MyMethod("Paul", 30);
+            MyMethod("Jane", 28);
+            MyMethod("Mark", 52);
+
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
 
 
         }
+
+        static void MyMethod(string fname, int age)
+        {
+            Console.WriteLine(fname + " is " + age);
+        }
+
     }
 }
